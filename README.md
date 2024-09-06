@@ -1,6 +1,6 @@
 # Design Patterns
 
-![Design Patterns](/images/design-pattern.png)
+<img src="/images/design-pattern.png" alt="Design Patterns" width="128" />
 
 A **_design pattern_** is a general, reusable solution to a commonly occurring problem within a given context in software design. It provides a template or guide that can be applied to solve problems during the software development process, promoting efficiency and code reuse.
 
