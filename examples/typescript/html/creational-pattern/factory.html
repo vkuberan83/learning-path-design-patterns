@@ -5,9 +5,72 @@
     <title>Factory Pattern</title>
     <link rel="stylesheet" href="../../dist/styles.css">
 </head>
-<body class="bg-blue-700 text-center p-4">
-<h1 class="text-3xl font-bold underline mt-12">
-    Hello world! Factory
-</h1>
+<body class="p-4">
+<div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col w-full max-w-4xl items-start">
+        <h1 class="text-3xl font-bold underline"><a href="../../index.html">Home</a></h1>
+        <h1 class="text-3xl font-bold underline mt-4">
+            Creational Patterns
+        </h1>
+        <h2 class="text-2xl mt-4 font-bold underline">
+            Simple Factory Patterns
+        </h2>
+
+        <div class="mt-4">
+            <label for="cars">Choose a Vehicle: </label>
+
+            <select
+                    name="simple-factory"
+                    id="simple-factory"
+                    onchange="simpleVehicleFactory(this)"
+                    class="w-96 p-2"
+            >
+                <option value="">Select a Vehicle</option>
+                <option value="Car">Car</option>
+                <option value="Bus">Bus</option>
+                <option value="Truck">Truck</option>
+                <option value="Plane">Plane</option>
+                <option value="Ship">Ship</option>
+                <option value="Submarine">Submarine</option>
+            </select>
+
+            <div class="mt-2">
+                <div class="bus-icon"></div>
+            </div>
+
+            <div class="mt-2">
+                <button
+                        type="button"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                        onclick="onSimpleVehicleStart()"
+                >
+                    Start
+                </button>
+                <button
+                        type="button"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                        onclick="onSimpleVehicleStop()"
+                >
+                    Stop
+                </button>
+                <label for="cars" class="ml-3">Accelerate: </label>
+                <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        max="250"
+                        class="pl-2 w-16 border-2"
+                        onchange="onSimpleVehicleAccelerate(this)"
+                />
+            </div>
+        </div>
+
+        <h2 class="text-2xl pt-2 font-bold underline">
+            Complex Factory Patterns
+        </h2>
+
+    </div>
+</div>
 </body>
 </html>
